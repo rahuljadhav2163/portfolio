@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/06b798522f.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: #eff8ff;
+           
+            border-radius: 10px;
+            
+
+        }
+        .container-1{
+            height: 1870px;
+            width: 1420px;
+            border: 4px solid gray;
+            margin-left:auto ;
+            margin-right: auto;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: -4px -5px 1px 0px #ccc;
+
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+        }
+        .nav-container{
+            height: 60px;
+            width: 1550px;
+            background-color: #eee;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-weight: bolder;
+            
+            
+           
+
+        }
+        .port{
+            font-size: 35px;
+            font-family: 'Merriweather', serif;
+            color: #fe8380;
+            margin-left: 60px;
+            margin-top: 10px;
+
+        }
+        .home{
+            font-size: 19px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #070303;
+            margin-left: 750px;
+            margin-top: 30px;
+
+        }
+        .home:hover{
+           cursor: pointer;
+           color: tomato;
+          
+        }
+        .about{
+            font-size: 19px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #070303;
+            margin-left: 30px;
+            margin-top: 30px;
+           
+
+        }
+        .about:hover{
+           cursor: pointer;
+           color: tomato;
+        }
+        .back-img{
+            
+            width: 1500;
+           
+            display: flex;
+           
+        }
+        .my-img{
+           margin-left: 120px;
+           border-radius: 50%;
+           height: 300px;
+           margin-top: 60px;
+        }
+        .name{
+           text-align: center;
+           margin-left: 180px;
+           margin-top: 100px;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .reduce-margin{
+            margin-right: 70px;
+        }
+        .lang{
+            padding: 6px;
+            width: 100px;
+            margin: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 15px;
+            height: 30px;
+           
+            font-size: 17px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+        .html{
+            margin-left: 210px;
+            background-color: #FF5733;
+        }
+        .css{
+            background-color: #2a64ee;
+
+        }
+        .cpp{
+            background-color: #659ad1;
+        }
+        .git{
+            background-color: #070303;
+            color: white;
+        }
+        .bootstrap{
+            background-color: #5e28aa;
+        }
+        .sub-name{
+            margin-left: 400px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .icon{
+            height: 30px;
+            padding: 5px;
+         
+        }
+        .icon:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+
+         
+        }
+        .github{
+            margin-left: 190px;
+            margin-top: 20px;
+        }
+        .container-2{
+            height: 380px;
+            width: 1250px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px rgb(184, 247, 9) solid;
+            margin-top: 80px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px 2px gray;
+        }
+        .edu{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #c7f709;
+            margin-top: 0;
+           border-top-left-radius: 20px;
+           border-top-right-radius: 20px;
+        }
+        .edu-container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .ssc{
+            font-size: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+            width: 300px;
+            background-color: #d6e295;
+            padding: 22px;
+            border-radius: 20px;
+            
+        }
+        .container-3{
+            
+            height: 800px;
+            width: 1250px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px rgb(16, 18, 9) solid;
+            margin-top: 80px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px 2px gray;
+           
+        }
+        .project{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #b4d62e;
+            margin-top: 0;
+           border-top-left-radius: 20px;
+           border-top-right-radius: 20px;
+
+        }
+        .project-container{
+            height: 305px;
+            width: 1100px;
+            border: #070303;
+            background-color: white;
+            border: black solid 3px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px 3px gray;
+            display: flex;
+            
+           
+
+        }
+        .project-img{
+            height: 290px;
+            width: 500px;
+            margin-top: 5px;
+            margin-left: 9px;
+            border-radius: 10px;
+        }
+        .project-name{
+            margin-left: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .htm{
+            background-color:#FF5733 ;
+            margin-top: -50px;
+            margin-left: 40px;
+        }
+        .top{
+            margin-top: -50px;
+        }
+        .calender-png{
+            height: 22px;
+            display: block;
+            margin-left: 45px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .text{
+            margin-left: 45px;
+            font-size: 17px;
+        }
+        .live-btn{
+            background-color: #2a64ee;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            padding: 5px;
+            margin-left: 45px;
+        }
+        .btnn{
+            background-color: green;
+        }
+
+
+        @media screen and (min-width: 375px) and (max-width: 668px) {
+           
+            .container-1{
+                height: 170px;
+            width: 830px;
+            }
+            .nav-container{
+                height: 60px;
+            width: 830px;
+
+            }
+            .home{
+                margin-left: 110px;
+                
+            }
+            .home:hover{
+           cursor: pointer;
+           color: tomato;
+        }
+
+
+}
+    </style>
+</head>
+<body>
+
+    <div class="container-1">
+        <div class="nav">
+            <div class="nav-container">
+                <p class="port">Portfolio</p>
+                <p class="home">Home</p>
+                <p class="about">About</p>
+                <p class="about">Project</p> 
+                
+                <p class="about reduce-margin">Contact</p>
+
+
+            </div>
+
+        </div>
+
+        <div class="back-img">
+
+            <img src="myeditimage.jpg" class="my-img"/>
+            <div>
+            <h1 class="name">Er. Rahul Jadhav</h1>
+            <h3 class="sub-name">(Fullstack Devoloper)</h3>
+            <button class="lang html">HTML</button>
+            <button class="lang css">CSS</button>
+            <button class="lang cpp">C++</button>
+            <button class="lang git">Github</button>
+            <button class="lang bootstrap">Bootstrap</button>
+
+
+        </div>
+            
+           
+
+        </div>
+        <img src="git.png" class="icon github"/>
+        <img src="linkedin.png" class="icon"/>
+        <img src="instagram.png" class="icon"/>
+        <img src="gmail-logo.png" class="icon"/>
+
+        <div class="container-2">
+            <h1 class="edu">Education🧑‍💻</h1>
+
+            <div  class="edu-container">
+
+           <div class="ssc">
+            SSC :
+            <p>I have completed my ssc from new high school, Dahegaon. </p>
+
+           </div>
+
+           <div class="ssc">
+            HSC :
+            <p>I have completed my hsc fron RBNB college,Shrirampur.</p>
+
+
+
+           </div>
+
+           <div class="ssc">
+            Current :
+            <p>I am currently pursing in 3rd year computer engineering from parikrama college of engineering,Kashti. </p>
+
+
+           </div>
+        </div>
+
+
+        </div>
+
+        <div class="container-3">
+            <h1 class="project">Project🖥️</h1>
+
+            <div class="project-container">
+                <img src="Screenshot (363).png" class="project-img"/>
+                
+                  <div>
+                    <h1 class="project-name">Pretty Mart</h1>
+                    <span class="top">
+                    <button class="lang htm">HTML</button>
+                    <button class="lang css">CSS</button>
+                    <button class="lang cpp">Git</button>
+                    <button class="lang git">Github</button>
+                </span><p class="calender-png">
+                <i class="fa-solid fa-calendar-days"></i> June 2023
+            </p>
+            <p class="text"> This project is depend on E-commerse website .I have worked on diffrent pages of Footwear and also work on login pages . In this pages use only HTML and CSS language.</p>
+            <Button class="live-btn">Live Demo🪧</Button>
+            <Button class="live-btn btnn"> <\> Source Code</Button>
+                
+                  
+                  </div>
+                 
+                 
+
+            </div>
+
+            <div class="project-container">
+                <img src="project.png" class="project-img"/>
+                
+                  <div>
+                    <h1 class="project-name">Pune The Itocity</h1>
+                    <span class="top">
+                    <button class="lang htm">HTML</button>
+                    <button class="lang css">CSS</button>
+                    <button class="lang cpp">Git</button>
+                    <button class="lang git">Github</button>
+                </span><p class="calender-png">
+                <i class="fa-solid fa-calendar-days"></i> August 2023
+            </p>
+            <p class="text"> This project is depend upon all information of pune it park .I have worked on diffrent pages of it park that lives in pune . In this pages use only HTML and CSS language.</p>
+            <Button class="live-btn">Live Demo🪧</Button>
+            <Button class="live-btn btnn"> <\> Source Code</Button>
+                
+                  
+                  </div>
+                 
+                 
+
+            </div>
+            
+
+            
+
+
+        </div>
+        
+    
+
+    </div>
+    
+</body>
+</html>
